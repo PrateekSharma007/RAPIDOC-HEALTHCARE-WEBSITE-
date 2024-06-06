@@ -23,13 +23,34 @@ h6 {
   font-family: "Raleway", sans-serif;
 }
 
+.nav_menu ul{
+  display : flex;
+  flex-direction: row;
+  align-items : center;
+  justify-content: flex-start;
+}
 
-.nav_link li {
+
+.sign_up  {
+  display : flex;
+  flex-direction: row;
+  align-items : center;
+  justify-content: right;
+}
+.nav_link a {
   padding: 5px 20px;
-  display: inline-block;
+ display: inline-block;
   color: white;
 }
 
+.nav_link li {
+  padding: 5px 20px;
+ display: inline-block;
+  color: white;
+}
+.sign_up {
+  justify-content: right;
+}
 .nav_link li a {
   transition: all 0.3s ease 0s;
   color: white;
@@ -72,7 +93,19 @@ button {
   /* display: ; */
   font-family: sans-serif;
   padding-top: 80px;
+  
 }
+
+#chat_input {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  margin : 30px;
+}
+.chat_input ::placeholder {
+  padding: 9px;
+}
+
 
 
 /* .container a:hover {

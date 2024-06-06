@@ -138,8 +138,10 @@ header h2 {
   color: #000;
   background: #f2f2f2;
 }
-.chatbot .chat-input {
+ .chatbot .chat-input {
   display: flex;
+  flex-direction: row;
+  justify-content: left;
   gap: 5px;
   position: absolute;
   bottom: 0;
@@ -150,7 +152,7 @@ header h2 {
 }
 .chat-input textarea {
   height: 55px;
-  width: 100%;
+  width: fit-content;
   border: none;
   outline: none;
   resize: none;
@@ -165,7 +167,7 @@ header h2 {
   height: 55px;
   display: flex;
   align-items: center;
-  visibility: hidden;
+  /*visibility: hidden;*/
   font-size: 1.35rem;
 }
 .chat-input textarea:valid ~ span {
