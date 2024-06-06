@@ -150,24 +150,31 @@ header h2 {
   padding: 3px 20px;
   border-top: 1px solid #ddd;
 }
+.chat-input {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+}
 .chat-input textarea {
   height: 55px;
   width: fit-content;
   border: none;
+  border-radius: 10px 10px 10px 0; 
   outline: none;
   resize: none;
   max-height: 180px;
-  padding: 15px 15px 15px 0;
+  padding: 15px 15px 15px 15px;
   font-size: 0.95rem;
+  margin-bottom: 20px;
 }
 .chat-input span {
   align-self: flex-end;
   color: #4178c0;
   cursor: pointer;
-  height: 55px;
   display: flex;
+  padding-top: 20px;
   align-items: center;
-  /*visibility: hidden;*/
+  visibility: hidden;
   font-size: 1.35rem;
 }
 .chat-input textarea:valid ~ span {
@@ -195,5 +202,6 @@ header h2 {
   }
   .chatbot header span {
     display: block;
+    
   }
 }
